@@ -23,7 +23,9 @@ public class BaseServlet extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");//处理响应编码
 		
 		/**
-		 * 1. 获取method参数，它是用户想调用的方法 2. 把方法名称变成Method类的实例对象 3. 通过invoke()来调用这个方法
+		 * 1. 获取method参数，它是用户想调用的方法
+		 * 2. 把方法名称变成Method类的实例对象
+		 * 3. 通过invoke()来调用这个方法
 		 */
 		String methodName = request.getParameter("method");
 		Method method = null;
